@@ -1,0 +1,40 @@
+﻿<Window x:Class="UpgradeDocs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpgradeDocs"
+        mc:Ignorable="d"
+        Title="UpgradeOffice Files" Width="450" Height="275">
+    <Grid>
+        <DockPanel>
+            
+            <StackPanel>
+               
+                
+                <Label Content="Word Processed" Foreground="CornflowerBlue" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="..." Name="Word" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="CornflowerBlue"/>
+                <Label Content="Excel Processed" Foreground="DarkGreen" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="..." Name="Excel" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="DarkGreen"/>
+                <Label Content="Presentation Processed" Foreground="DarkRed" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="..." Name="Ppt" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="DarkRed"/>
+                
+            </StackPanel>
+            <StackPanel>
+                <DockPanel>
+                <TextBox HorizontalAlignment="left" Name="DirPath"  Text="Directory path"/>
+                <Button Content="Process" HorizontalAlignment="Right" VerticalAlignment="Top" HorizontalContentAlignment="Center" Name="btnProcess" Click="Button_Click"/>
+                </DockPanel>
+                <Label FontSize="12" Foreground="DarkBlue" HorizontalAlignment="Center">Total number of files to process:</Label>
+                <Label HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" Foreground="DarkBlue" Name="lblTotalFiles" Content="..."></Label>
+                <TextBlock Text="Processing........." Visibility="Hidden" FontSize="30" Name="lbComplete" FontFamily="Arial" Foreground="IndianRed"  HorizontalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </DockPanel>
+        
+
+
+
+
+
+    </Grid>
+</Window>
